@@ -11,7 +11,8 @@
 **Install**
 
 ```
-pip install git+https://github.com/execution/C0mptCrypt
+git clone https://github.com/execution/Telegram-Tools
+cd Telegram-Tools
 ```
 
 <h1></h1>
