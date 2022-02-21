@@ -28,7 +28,7 @@ current = input("Current channel name: ")
 target = input("Target channel name: ")
 
 t = TelegramSwapper()
-t.Swap(api_id, api_hash, current, target))
+t.Swap(api_id, api_hash, current, target)
 ```
 **Register Example**
 ```python
