@@ -17,24 +17,20 @@ cd Telegram-Tools
 
 <h1></h1>
 
-**Code Example**
+**Swapper Example**
 
 ```python
-from C0mptCrypt import C0mptCrypt
+from TelegramSwapper import TelegramSwapper
 
-string = input("Enter string: ")
+api_id = input("Enter API_ID: ")
+api_hash = input("Enter API_HASH: ")
+current = input("Current channel name: ")
+target = input("Target channel name: ")
 
-enc = C0mptCrypt().Encrypt(string)
-
-print(enc)
+t = TelegramSwapper()
+t.Swap(api_id, api_hash, current, target))
 ```
-
+**Register Example**
 ```python
-from C0mptCrypt import C0mptCrypt
-
-string = input("Enter encrypted string: ")
-
-enc = C0mptCrypt().Decrypt(string)
-
-print(enc)
+None
 ```
