@@ -30,7 +30,7 @@ target = input("Target channel name: ")
 t = TelegramSwapper()
 t.Swap(api_id, api_hash, current, target)
 ```
-**Register Example**
+**Channel Register Example**
 ```python
 None
 ```
