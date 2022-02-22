@@ -13,6 +13,7 @@
 ```
 git clone https://github.com/execution/Telegram-Tools
 cd Telegram-Tools
+sh install.sh
 ```
 
 <h1></h1>
