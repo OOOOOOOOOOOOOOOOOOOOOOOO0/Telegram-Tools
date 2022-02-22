@@ -28,7 +28,7 @@ class TelegramSwapper:
                 pass
             if self.available == True:
                 self.client(functions.channels.UpdateUsernameRequest(channel=self._current, username=self._target))
-                print(f"Successfully claimed @{self._target}")
+                tprint(tprint.GREEN, f"Claimed @{self._target}", 14)
     
     def Swap(self, api_id, api_hash, current, target):
         self._current = current
