@@ -30,7 +30,7 @@ class TelegramRegister:
                 try:
                     channel = client.create_channel(f"@{target}", "This channel was created by")#https://github.com/execution/Telegram-Tools")
                     client.update_chat_username(channel.id, target)
-                    print(f"Claimed @{target}")
+                    tprint(tprint.GREEN, f"Claimed @{target}", 14)
                 except Exception as err:
                     print(err)
             else:
