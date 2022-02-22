@@ -32,10 +32,12 @@ t.Swap(api_id, api_hash, current, target)
 ```
 **Channel Register Example**
 ```python
+from TelegramRegister import TelegramRegister
+
 api_id = input("API_ID: ")
 api_hash = input("API_HASH: ")
 ch = input("Target: ")
 
-t = tReg()
+t = TelegramRegister()
 t.Register(ch, api_id, api_hash)
 ```
