@@ -1,0 +1,1 @@
+from TelegramRegister.register import TelegramRegister
