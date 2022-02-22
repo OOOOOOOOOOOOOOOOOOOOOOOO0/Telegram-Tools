@@ -32,5 +32,10 @@ t.Swap(api_id, api_hash, current, target)
 ```
 **Channel Register Example**
 ```python
-None
+api_id = input("API_ID: ")
+api_hash = input("API_HASH: ")
+ch = input("Target: ")
+
+t = tReg()
+t.Register(ch, api_id, api_hash)
 ```
