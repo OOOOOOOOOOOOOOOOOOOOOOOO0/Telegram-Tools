@@ -12,7 +12,6 @@ class TelegramSwapper:
 
     def __init__(self):
         self.tries = 0
-        self.available = False
     
     def Clear(self):
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -21,14 +20,11 @@ class TelegramSwapper:
         while True:
             result = self.client(functions.account.CheckUsernameRequest(username=self._target))
             self.tries += 1
-
-            if result == True:
-                self.available = True
-            else:
-                pass
-            if self.available == True:
+            if result:
                 self.client(functions.channels.UpdateUsernameRequest(channel=self._current, username=self._target))
                 tprint(tprint.GREEN, f"Claimed @{self._target}", 14)
+            else:
+                pass
     
     def Swap(self, api_id, api_hash, current, target):
         self._current = current
